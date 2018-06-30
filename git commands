@@ -1,0 +1,77 @@
+######  FLOW OF GIT  ######
+once a change is made, before commit
+1) git status - must check which all files hs been affected
+2) git diff   - must check all codes are needed!!
+3) git add <each file>
+4) git commit
+5) git push origin <target-branch>
+
+
+
+
+###### when you want to merge with other branch ######
+suppose your branch is dev and want to merge to master
+and you are in dev
+
+<commit and push all changes in the 'dev'>
+git pull origin master
+git merge master
+<manually resolve conflict if any, then recommit it>
+git push origin dev
+give a pull request from github.com site, verify code and merge
+git pull origin master
+
+
+
+
+
+git clone <url>		# download a project from github for first time
+
+git add .   		# add all change affected files to git 
+git add <filename>   	# add a particular file
+git add --all  		# add all files including newly created
+
+git status 		# show files with change
+git diff		# show uncommited difference [what you added after last commit]
+
+git commit -m "Custom commit Message!"
+
+##  When you checkout to a new branch, branch starts with the current code in the current branch
+git branch                      # to view list of branchs
+git branch <branchname>         # To switch to branch
+git branch  -b <branchname>     # Create and checkout to a new branch
+
+
+git pull                        # to pull code from local master branch
+git pull origin master          # to pull code from github site master branch
+git pull <branch>               # to pull code from local specified branch
+git pull origin <branch>        # to pull code from github site specfied branch
+
+git merge <branch>              # to merge code of specified branch into our branch
+
+## Conflict will happen if the same line is changed in both parties
+## code will be shown as in the exampe
+=========== HEAD
+code in current branch
+===========
+code in the choosen branch
+=========== 3vhb3k8h3ir2rbi2r8o2g3ir3iu... # last commit id of choosen branch
+## THEN manually remove the unwanted code and recommit! that's it!!
+
+git push origin master          # to update code from github site master branch
+git push origin <branch>        # to update code from github site specfied branch
+
+
+
+git rm --cached <filename>  	# remove a commited file from git
+
+
+
+
+
+
+
+
+
+
+

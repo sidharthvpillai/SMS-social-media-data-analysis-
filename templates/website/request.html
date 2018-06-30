@@ -1,0 +1,44 @@
+{% block content %}
+SURVEYS YOU HAVE ALREADY STARTED<br>
+
+<br><br><br>
+  <h2>New Request Query</h2>
+  <form method="post">
+      {% csrf_token %}
+      <input type="text1" name="username">
+       <select name="s1">
+       <option value=" ">AND</option>
+       <option value="OR">OR</option>
+       <option value="-">NOT</option>
+       </select><br>
+      <input type="text2" name="username">
+       <select name="s2">
+       <option value="AND">AND</option>
+       <option value="OR">OR</option>
+       <option value="-">NOT</option>
+       </select><br>
+      <input type="text3" name="username">
+       <select name="s3">
+       <option value="AND">AND</option>
+       <option value="OR">OR</option>
+       <option value="-">NOT</option>
+       </select><br>
+      <input type="text4" name="username">
+       <select name="s4">
+       <option value="AND">AND</option>
+       <option value="OR">OR</option>
+       <option value="-">NOT</option>
+           <option default=" "></option>
+       </select><br>
+      <input type="text5" name="username">
+       <select name="s5">
+       <option value="AND">AND</option>
+       <option value="OR">OR</option>
+       <option value="-">NOT</option>
+       </select><br>
+      <input type="text6" name="username">
+<br>
+      <button type="submit">Submit</button>
+
+  </form>
+{% endblock %}
