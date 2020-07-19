@@ -9,7 +9,7 @@ class Command(BaseCommand):
             q= FbQueryMapper.objects.all().exclude(id=2)
             for fbquerymapper in q :
                 print fbquerymapper.page
-                token = "741011062769592|tLH6FvFILJ0oOqoHGUKouycRuR4"
+                token = "<<<|>>>"
                 since = datetime.datetime.now() - datetime.timedelta(days=14)
                 d = since.date()
                 graph = facebook.GraphAPI(token)

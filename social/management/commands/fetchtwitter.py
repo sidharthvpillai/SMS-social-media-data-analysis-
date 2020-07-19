@@ -12,10 +12,10 @@ class Command(BaseCommand):
 
 
     def handle(self, *args, **options):
-        CONSUMER_KEY = "3oZUcRXGDnAFTw8yU2tnXWYPv"
-        CONSUMER_SECRET = "OO0etJpFZWjNWI209IOjtgkHNA35gXceZ3iSuBb0vo1iBT7yGm"
-        TOKEN = "2561013228-vvbdtCs3V1VBiaJ3d1bFfYjZoJmJVv9sjJUDaFG"
-        TOKEN_SECRET = "LFJGXybQEcvX0jzDxeRsLICk4fMS1nayXm5kcAHRvt7Gf"
+        CONSUMER_KEY = "<<<>>>"
+        CONSUMER_SECRET = "<<<>>>"
+        TOKEN = "<<<>>>-<<<>>>"
+        TOKEN_SECRET = "<<<>>>"
         consumer = oauth2.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
         token = oauth2.Token(key=TOKEN, secret=TOKEN_SECRET)
         client = oauth2.Client(consumer, token)

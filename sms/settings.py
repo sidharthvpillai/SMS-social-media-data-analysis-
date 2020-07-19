@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'q8m^8#0ittoaur@m2u7kw-d3m=$zxl20ht-bii6m+hg771@-gy'
+SECRET_KEY = '<<<>>>'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,14 +83,6 @@ DATABASES = {
         'USER': 'admin',
         'PASSWORD': 'password',
         'HOST': 'localhost',
-        'PORT': 5432,
-    },
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5sra48dh9gf7a',
-        'USER': 'pgykxdqbbamphc',
-        'PASSWORD': '5836e3cf37f231785b179633598babd14f4edd5021bb67bacc1ef7fb457951b5',
-        'HOST': 'ec2-54-163-246-193.compute-1.amazonaws.com',
         'PORT': 5432,
     }
 }
@@ -159,15 +151,6 @@ LOGIN_REDIRECT_URL = 'user'
 
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-'''EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'projectsms2018@gmail.com'
-EMAIL_HOST_PASSWORD = ''
-DEFAULT_EMAIL_FROM= 'projectsms2018@gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-'''
-
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'projectsms'
@@ -179,22 +162,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
 ADMIN=(
-    (
-        "sidharth","sidhu.svs@gmail.com"
-    ),
-    (
-        "nissam","nissam514@gmail.com"
-    ),
-    (
-        "joel","joelvarapuram@gmail.com"
-    ),
-    (
-        "admin","projectsms2018@gmail.com"
-    )
+
 )
 
 #mail_admin(subject,body)
 
-STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "pk_test_qKiQoF8KcHUCLEnhknxUceuN")
-STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "sk_test_WNZTOxLXJB1DfJuSjWFbUIb5")
+STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "<<<>>>")
+STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "<<<>>>")
 #pg_dump -d sms -h localhost --username admin --password -fp
