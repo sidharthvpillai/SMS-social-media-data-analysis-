@@ -28,7 +28,7 @@ six==1.11.0
 stevedore==1.28.0
 stripe==1.79.1
 textblob==0.15.0
-urllib3==1.22
+urllib3==1.26.5
 vine==1.1.4
 virtualenv==15.1.0
 virtualenv-clone==0.2.6
